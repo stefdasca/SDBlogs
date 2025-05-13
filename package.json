@@ -5,9 +5,9 @@
   "scripts": {
     "build":    "next build",
     "export":   "next export",
-    "postexport": "mkdir -p out/SDBlogs && (shopt -s extglob && mv out/!(SDBlogs) out/SDBlogs/)",
-    "predeploy": "npm run build && npm run export",
-    "deploy":   "gh-pages -d out/SDBlogs"
+    "predeploy": "npm run export",
+    "deploy": "gh-pages -d out",
+    "start": "next start"
   },
   "dependencies": {
     "gray-matter": "^4.0.3",
