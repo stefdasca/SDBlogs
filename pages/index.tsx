@@ -31,20 +31,7 @@ export default function Home({ recent }) {
         </p>
         <Link href="/blog" className="text-brand underline">Go to Blog →</Link>
       </div>
-      <div>
-        <h2 className="text-2xl font-semibold">Find me on</h2>
-        <div className="flex justify-center space-x-6 mt-2 text-2xl">
-          <a href="https://instagram.com/yourInstagramHandle" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
-            <FaInstagram />
-          </a>
-          <a href="https://facebook.com/yourFacebookPage" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
-            <FaFacebook />
-          </a>
-          <a href="https://yourwebsite.com" target="_blank" rel="noopener noreferrer" aria-label="Website">
-            <FaGlobe />
-          </a>
-        </div>
-      </div>
+      
       <div>
         <h2 className="text-2xl font-semibold">Latest Posts</h2>
         {recent.length === 0 ? (
@@ -60,6 +47,20 @@ export default function Home({ recent }) {
             ))}
           </div>
         )}
+      </div>
+      <div>
+        <h2 className="text-2xl font-semibold pt-36">Find me on</h2>
+        <div className="flex justify-center space-x-6 mt-2 text-2xl">
+          <a href="https://instagram.com/yourInstagramHandle" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+            <FaInstagram />
+          </a>
+          <a href="https://facebook.com/yourFacebookPage" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+            <FaFacebook />
+          </a>
+          <a href="https://yourwebsite.com" target="_blank" rel="noopener noreferrer" aria-label="Website">
+            <FaGlobe />
+          </a>
+        </div>
       </div>
     </section>
   )
