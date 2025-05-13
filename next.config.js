@@ -1,8 +1,7 @@
 /** next.config.js **/
 /** @type {import('next').NextConfig} */
 module.exports = {
-  // static-HTML export for App Router
+  // Classic pages-router export mode
   output: 'export',
-  // (optional) have foldered URLs like /blog/slug/
   trailingSlash: true,
 }
