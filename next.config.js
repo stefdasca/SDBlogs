@@ -10,10 +10,14 @@ const nextConfig = {
 }
 
 module.exports = {
+  // 👇 static export mode
   output: 'export',
-  // if your Pages URL is under a path:
-  // basePath: '/SDBlogs',
-  // assetPrefix: '/SDBlogs/',
+
+  // 👇 your GitHub-Pages repo path
+  basePath: '/SDBlogs',
+  assetPrefix: '/SDBlogs/',
+
+  // 👇 so pages are folders (e.g. /blog/slug/index.html)
   trailingSlash: true,
 }
 
