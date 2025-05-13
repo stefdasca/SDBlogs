@@ -3,10 +3,17 @@
 const nextConfig = {
   output: 'export',
   // if your Pages URL is https://you.github.io/your-repo
-  basePath: '/your-repo',
-  assetPrefix: '/your-repo/',
+  basePath: '/SDBlogs',
+  assetPrefix: '/SDBlogs/',
   // optional: so that URLs become /page/ rather than page.html:
   trailingSlash: true,
 }
 
-module.exports = nextConfig
+module.exports = {
+  output: 'export',
+  // if your Pages URL is under a path:
+  // basePath: '/SDBlogs',
+  // assetPrefix: '/SDBlogs/',
+  trailingSlash: true,
+}
+
