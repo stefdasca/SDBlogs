@@ -4,8 +4,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "export": "next build && next export",
-    "deploy": "gh-pages -d out",
+    "export": "next build && next export --outdir docs",
     "start": "next start"
   },
   "dependencies": {
