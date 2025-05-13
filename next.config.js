@@ -1,11 +1,8 @@
-// next.config.js
+/** next.config.js **/
 /** @type {import('next').NextConfig} */
-const nextConfig = {
-  // Enable static HTML export for the App Router
+module.exports = {
+  // static-HTML export for App Router
   output: 'export',
-
-  // Optional, but keeps your URLs folder-based (/, /blog/slug/, etc.)
+  // (optional) have foldered URLs like /blog/slug/
   trailingSlash: true,
 }
-
-module.exports = nextConfig
