@@ -32,8 +32,8 @@ export default function Home({ recent }) {
         <Link href="/blog" className="text-brand underline">Go to Blog →</Link>
       </div>
       
-      <div>
-        <h2 className="text-2xl font-semibold">Latest Posts</h2>
+      <div >
+        <h2 className="text-2xl font-semibold pt-36">Latest Posts</h2>
         {recent.length === 0 ? (
           <p className="mt-4 text-gray-600">No posts yet.</p>
         ) : (
@@ -49,7 +49,7 @@ export default function Home({ recent }) {
         )}
       </div>
       <div>
-        <h2 className="text-2xl font-semibold pt-36">Find me on</h2>
+        <h2 className="text-2xl font-semibold pt-72">Find me on</h2>
         <div className="flex justify-center space-x-6 mt-2 text-2xl">
           <a href="https://instagram.com/yourInstagramHandle" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
             <FaInstagram />
