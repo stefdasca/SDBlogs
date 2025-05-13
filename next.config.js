@@ -1,15 +1,10 @@
-/** next.config.js **/
+// next.config.js
 /** @type {import('next').NextConfig} */
-const nextConfig = {
-  // static export mode
+module.exports = {
+  // static export
   output: 'export',
-
-  // your GitHub-Pages repo path (case-sensitive)
+  // PROJECT-PAGE path (must match your repo name exactly)
   basePath: '/SDBlogs',
   assetPrefix: '/SDBlogs/',
-
-  // emit folders (so /blog/slug/index.html rather than slug.html)
   trailingSlash: true,
 }
-
-module.exports = nextConfig
