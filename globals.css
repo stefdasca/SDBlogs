@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* (optional) your global overrides */
+body {
+  /* light-orange bg, black text by default */
+  @apply bg-brand-light text-brand-black;
+  font-family: system-ui, sans-serif;
+}
+a {
+  /* no underlines by default */
+  @apply no-underline;
+}

@@ -12,7 +12,7 @@ export async function getStaticProps() {
     const slug = file.replace(/\.mdx?$/, '')
     const raw = fs.readFileSync(path.join(postsDir, file), 'utf8')
     const { data } = matter(raw)
-    return { slug, title: data.title, date: data.date, description: data.description }
+    return { slug, title: data.title, date: data.date, description: data.description ?? null }
   }).sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
 
   return { props: { recent: posts.slice(0, 3) } }
@@ -54,7 +54,7 @@ export default function Home({ recent }) {
             {recent.map((post) => (
               <Link key={post.slug} href={`/blog/${post.slug}`} className="block p-4 border border-brand rounded hover:shadow-lg hover:shadow-brand/20">
                 <h3 className="text-xl font-medium">{post.title}</h3>
-                <p className="text-sm text-gray-600">{new Date(post.date).toLocaleDateString()}</p>
+                <p className="text-sm text-gray-600">{new Date(post.date).toLocaleDateString('en-GB')}</p>
                 {post.description && <p className="mt-2 text-gray-800">{post.description}</p>}
               </Link>
             ))}
